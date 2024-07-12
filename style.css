@@ -9,6 +9,7 @@
 
 html {
   font-size: 62.5%;
+  color: #111827;
 }
 
 body {
@@ -86,6 +87,12 @@ input[type="search"] {
   border-radius: 15px;
   justify-self: start;
   background-color: #f1f5f9;
+  border: none;
+  padding: 10px;
+}
+
+input[type="search"]:focus {
+  outline: #831843 2px solid;
 }
 
 .profile-pic-1 {
@@ -130,6 +137,13 @@ font-weight: bold;
   background-color: #831843;
   color: #fff;
   font-weight: bold;
+  border: none;
+  box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.1);
+}
+
+.buttons button:hover {
+  background-color: #db2777;
+  cursor:pointer;
 }
 
 .main-content {
@@ -155,6 +169,7 @@ font-weight: bold;
   border-radius: 15px;
   display: grid;
   grid-template-rows: 1fr 10fr 1fr;
+  box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.05);
 }
 
 .cards > p:first-child {
@@ -210,6 +225,7 @@ font-weight: bold;
   background-color: white;
   border-radius: 15px;
   padding: 15px;
+  box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.05);
 }
 
 .fake-profile {
@@ -220,6 +236,7 @@ font-weight: bold;
   background-color: white;
   border-radius: 15px;
   padding: 30px;
+  box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.05);
 }
 .announcements > div {
   font-size: 12px;
