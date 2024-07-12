@@ -22,13 +22,12 @@ body {
     display: grid;
     grid-template-columns: 1fr 6fr;
     grid-template-rows: 1fr 5fr;
-    gap: 50px;
+    max-height: 100vh;
 }
 
 .side-bar {
-    background-color: brown;
-    height: 100vh;
-    padding-top: 20px;
+    background-color: #831843;
+    padding-top: 35px;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: grid;
@@ -44,15 +43,202 @@ body {
     display: grid;
     gap: 15px;
     font-size: 18px;
+    padding-left: 15px;
+}
+
+.icon, li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .header { 
     grid-column: 2 / 3;
     grid-row: 1 / 2; 
+    background-color: #fff;
+    display: grid;
+    grid-template-rows: 50px 130px;
+    padding-top: 20px;
+}
+
+.header > div:first-child {
+  display: grid;
+  grid-template-columns: 6fr 50px fit-content(100px) 1fr;
+  align-items: center;
+}
+
+.header > div:last-child {
+  display: grid;
+  grid-template-columns: 2fr 4fr 8fr; 
+  align-items: center;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-self: center;
+  padding-right: 250px;
+}
+input[type="search"] {
+  width: 800px;
+  height: 30px;
+  border-radius: 15px;
+  justify-self: start;
+  background-color: #f1f5f9;
+}
+
+.profile-pic-1 {
+  justify-self: end;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.profile-pic-2 {
+  justify-self: end;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.welcome-msg > p:first-child {
+  font-size: 16px;
+}
+.welcome-msg > p:last-child {
+font-size: 24px;
+font-weight: bold;
+}
+
+.buttons {
+  justify-self: end;
+  align-self: end;
+  padding-right: 80px;
+  padding-bottom: 30px;
+}
+
+.buttons button {
+  height: 40px;
+  width: 90px;
+  border-radius: 30px;
+  margin-right: 20px;
+  background-color: #831843;
+  color: #fff;
+  font-weight: bold;
 }
 
 .main-content {
-    background-color: bisque;
+    background-color: #f1f5f9;
     grid-column: 2 / 3;
     grid-row: 2 / 3; 
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 30px 324px 324px;
+  gap: 25px;
+  margin-left: 30px;
+  margin-top: 25px;
+}
+
+
+.cards > div {
+  background-color: white;
+  border-radius: 15px;
+  display: grid;
+  grid-template-rows: 1fr 10fr 1fr;
+}
+
+.cards > p:first-child {
+  grid-column: 1 / -1;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 22px;
+  color: #831843;
+}
+
+.card > div {
+  justify-self: end;
+}
+
+.card {
+  padding: 20px;
+}
+
+.card > div > img {
+  margin-left: 15px;
+}
+
+.card > p:first-child {
+  font-weight: bold;
+  color: #831843;
+}
+
+.extra {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 30px 340px 30px 250px;
+  gap: 25px;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+.extra > p:first-child {
+  font-weight: bold;
+  font-size: 22px;
+  padding-left: 10px;
+  color: #831843;
+}
+
+.trending-text {
+  font-weight: bold;
+  font-size: 22px;
+  padding-left: 10px;
+  color: #831843;
+}
+
+.trending {
+  display: grid;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.fake-profile {
+  display: flex;
+}
+
+.announcements{
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px;
+}
+.announcements > div {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.announcements > div:nth-child(2) {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: solid 1px #831843;
+  border-bottom: solid 1px #831843;
+}
+
+.announcements > div > p {
+  font-weight: bold;
+  color: #831843;
+}
+
+.fake-profile > div > p:first-child {
+  font-weight: bold;
+  color: #831843;
 }
